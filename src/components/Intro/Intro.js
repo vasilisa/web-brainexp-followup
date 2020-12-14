@@ -53,7 +53,7 @@ class Intro extends React.Component {
     
   redirectToTarget(){
     this.props.history.push({
-      pathname: `/Instructions`, // Consent  
+      pathname: `/Consent`, // Consent  
       state: {participant_info: this.state}
     })
   }
