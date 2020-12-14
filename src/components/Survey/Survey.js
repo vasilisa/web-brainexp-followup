@@ -75,8 +75,6 @@ class Survey extends React.Component {
 
   redirectToQuiz () {
 
-    console.log(this.state)
-
     if((this.props.location.state.participant_info.block_number_survey <= (this.state.participant_info.TotalBlock)))
       
           {           
@@ -152,9 +150,7 @@ class Survey extends React.Component {
 
     const surveytag_block  = survey_list_[block_number_]
     const surveyname_block = survey_name_[block_number_]
-    
-    console.log('SurveyName Block:',surveyname_block)
- 
+     
     this.setState({ loading: true , questions: quizData[survey_list_[block_number_]].default, block_info : {...this.state.block_info, surveytag:surveytag_block, surveyname: surveyname_block}});
 
 }
@@ -184,8 +180,6 @@ class Survey extends React.Component {
       'date_time_end': date_time_end, 
       'log_type'     : 'survey' 
     }
-
-    console.log(body_cashed)
 
     fetch(`${API_URL}/attempts_followup/save_followup/`+ this.state.participant_info.participant_id + `/` + this.state.participant_info.prolific_id, {
        method: 'POST',

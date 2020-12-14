@@ -40,6 +40,7 @@ class Instructions extends React.Component {
             newblock_frame : true, 
             readyToProceed: false,
             redirect: false,
+            handle: '' 
         }
 
     // console.log('Instructions', this.state)

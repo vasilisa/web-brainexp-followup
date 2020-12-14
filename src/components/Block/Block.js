@@ -220,7 +220,6 @@ redirectToIgtask = () => {
       'log_type'     : 'banditgame' 
     }
     
-    console.log('body_cashed', body_cashed)
 
     try {
 
@@ -308,7 +307,7 @@ redirectToIgtask = () => {
           th_reward_2    : Object.keys(data['th_reward_2']).map((key, index) => (data['th_reward_2'][key])),
           position       : Object.keys(data['position']).map((key, index) => (data['position'][key])),
           trial_numb     : 0,
-          TotalTrial     : 2 // Object.keys(data['reward_1']).length  // 1 for THIS IS FOR THE TEST ONLY 
+          TotalTrial     : Object.keys(data['reward_1']).length  // 1 for THIS IS FOR THE TEST ONLY 
         }
       
         this.setState({

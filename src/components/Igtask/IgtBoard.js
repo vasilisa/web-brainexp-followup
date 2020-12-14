@@ -26,7 +26,7 @@ class IgtBoard extends React.Component {
     const sequence_  = sqsjson[this.props.location.state.participant_info.run-1][this.props.location.state.participant_info.game-1] // 0 should be the 1st game of the run 
     const cols_      = clsjson[this.props.location.state.participant_info.run-1][this.props.location.state.participant_info.game-1] 
     
-    const totalTrial_ = this.props.location.state.participant_info.run ===1 ? 1: 1 // DEFAULT 15 ORIG 15 First run is a training one with just 1 game. 
+    const totalTrial_ = this.props.location.state.participant_info.run ===1 ? 1: 15 // DEFAULT 15 ORIG 15 First run is a training one with just 1 game. 
 
     var time_date_first   = new Date()
     this.state = {
