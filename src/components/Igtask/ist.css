@@ -3,12 +3,14 @@
   width: 100%;
   align-items: center;
   align-content: center; 
-  justify-content: center; 
+  justify-content: center;
 
 }
 
 .conf {
-  width: 75%;
+  width: 100%;
+  margin-bottom:-40%;
+  margin-bottom:-10%;
 }
 
 .score {
@@ -68,7 +70,7 @@
 }
 
 .response-row {
-margin-top: 5vw;
+margin-top: 14vw;
 margin-left:20vw;
 
 }

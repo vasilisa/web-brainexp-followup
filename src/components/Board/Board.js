@@ -385,6 +385,7 @@ componentDidMount() {
                             'reward_2'         : this.state.reward_2, // this.state.block_info.reward_2,
                           }  
 
+    console.log('Board POST',body)
     fetch(`${API_URL}/participants_data_banditgame/create/` + this.state.participant_info.participant_id + `/` + block_id + `/` + this.state.participant_info.prolific_id, {
        method: 'POST',
        headers: {
